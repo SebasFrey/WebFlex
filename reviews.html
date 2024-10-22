@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebFlex - Reseñas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">WebFlex</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tools.html">Herramientas</a></li>
+                <li><a href="reviews.html">Reseñas</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reviews-hero">
+            <h1>Reseñas de Usuarios</h1>
+            <p>Descubre lo que otros usuarios opinan sobre nuestras herramientas</p>
+        </section>
+
+        <section class="reviews-grid">
+            <!-- Aquí irían las reseñas de los usuarios -->
+        </section>
+
+        <section class="review-form-section">
+            <div class="review-form-container">
+                <h2>Deja tu Reseña</h2>
+                <form id="review-form">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tool">Herramienta:</label>
+                        <select id="tool" name="tool" required>
+                            <option value="">Selecciona una herramienta</option>
+                            <option value="txyz-ai">TXYZ AI</option>
+                            <option value="ai-detector">AI Detector</option>
+                            <option value="cite-this-for-me">Cite This For Me</option>
+                            <option value="remove-bg">Remove.bg</option>
+                            <option value="adobe-color">Adobe Color</option>
+                            <option value="pixlr">Pixlr</option>
+                            <option value="online-audio-converter">Online Audio Converter</option>
+                            <option value="mp3-cut">MP3 Cut</option>
+                            <option value="bear-audio-tool">Bear Audio Tool</option>
+                            <option value="ilovepdf">iLovePDF</option>
+                            <option value="tinywow">TinyWow</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Calificación:</label>
+                        <div class="star-rating">
+                            <input type="radio" id="star5" name="rating" value="5" required><label for="star5"></label>
+                            <input type="radio" id="star4" name="rating" value="4" required><label for="star4"></label>
+                            <input type="radio" id="star3" name="rating" value="3" required><label for="star3"></label>
+                            <input type="radio" id="star2" name="rating" value="2" required><label for="star2"></label>
+                            <input type="radio" id="star1" name="rating" value="1" required><label for="star1"></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="review">Tu reseña:</label>
+                        <textarea id="review" name="review" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Enviar Reseña</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre WebFlex</h3>
+                <p>WebFlex es tu centro de herramientas multimedia, diseñado para potenciar tu creatividad y productividad en la era digital.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tools.html">Herramientas</a></li>
+                    <li><a href="reviews.html">Reseñas</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 WebFlex. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <button id="scroll-to-top" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+</html>
