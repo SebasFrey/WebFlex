@@ -58,6 +58,7 @@ nav {
 .nav-links {
     display: flex;
     list-style: none;
+    transition: transform 0.3s ease-in-out;
 }
 
 .nav-links li {
@@ -75,6 +76,7 @@ nav {
     color: var(--pastel-blue);
 }
 
+/* Burger Menu */
 .burger {
     display: none;
     cursor: pointer;
@@ -86,6 +88,19 @@ nav {
     background-color: var(--secondary-color);
     margin: 5px;
     transition: all 0.3s ease;
+}
+
+/* Menu Animation */
+.burger.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /* Hero Section */
@@ -113,34 +128,6 @@ nav {
     background: linear-gradient(45deg, var(--pastel-blue), var(--pastel-green), var(--pastel-pink));
     opacity: 0.1;
     animation: gradientAnimation 10s ease infinite;
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-.hero-content {
-    z-index: 1;
-}
-
-.hero h1, .tools-hero h1, .reviews-hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    animation: fadeInUp 1s ease;
-}
-
-.hero p, .tools-hero p, .reviews-hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    animation: fadeInUp 1s ease 0.2s;
 }
 
 .cta-button {
@@ -494,6 +481,7 @@ footer {
     .burger {
         display: block;
     }
+}
 
     .hero h1, .tools-hero h1, .reviews-hero h1 {
         font-size: 2rem;
@@ -519,7 +507,7 @@ footer {
     .review-form-container {
         padding: 1rem;
     }
-}
+
 
 .nav-active {
     transform: translateX(0%);
@@ -550,98 +538,6 @@ footer {
 /* ... (estilos anteriores) ... */
 
 /* Estilos para el menú desplegable */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@400;700&display=swap');
-
-:root {
-    --primary-color: #000000;
-    --secondary-color: #ffffff;
-    --accent-color: #f0f0f0;
-    --text-color: #333333;
-    --pastel-blue: #a8d8ea;
-    --pastel-green: #c8e6c9;
-    --pastel-pink: #f8bbd0;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--secondary-color);
-}
-
-/* Header Styles */
-header {
-    background-color: var(--primary-color);
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    transition: all 0.3s ease;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
-
-.logo {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--secondary-color);
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.logo:hover {
-    color: var(--pastel-blue);
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li {
-    margin-left: 2rem;
-    position: relative; /* Agregado para el menú desplegable */
-}
-
-.nav-links a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: var(--pastel-blue);
-}
-
-.burger {
-    display: none;
-    cursor: pointer;
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: var(--secondary-color);
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
-/* Dropdown Styles */
 .dropdown {
     position: relative;
 }
@@ -651,7 +547,7 @@ nav {
     position: absolute;
     background-color: var(--primary-color);
     min-width: 200px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
@@ -674,116 +570,6 @@ nav {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-/* Hero Section */
-.hero, .tools-hero, .reviews-hero {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    padding: 0 2rem;
-}
-
-.hero::before, .tools-hero::before, .reviews-hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, var(--pastel-blue), var(--pastel-green), var(--pastel-pink));
-    opacity: 0.1;
-    animation: gradientAnimation 10s ease infinite;
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-/* (Resto del CSS permanece igual) */
-
-/* Ajustes responsivos */
-@media screen and (max-width: 768px) {
-    .nav-links {
-        position: fixed;
-        right: -100%;
-        top: 5rem;
-        flex-direction: column;
-        background-color: var(--primary-color);
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    }
-
-    .nav-links.active {
-        right: 0;
-    }
-
-    .nav-links li {
-        margin: 2.5rem 0;
-    }
-
-    .burger {
-        display: block;
-    }
-
-    .hero h1, .tools-hero h1, .reviews-hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero p, .tools-hero p, .reviews-hero p {
-        font-size: 1rem;
-    }
-
-    .feature {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-
-    .tools-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .tool-category {
-        padding: 1rem;
-    }
-
-    .review-form-container {
-        padding: 1rem;
-    }
-
-    .dropdown-content {
-        position: static;
-        display: none; /* Cambiado a none */
-        background-color: transparent;
-        box-shadow: none;
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: none; /* Cambiado a none */
-    }
-
-    .dropdown.active .dropdown-content {
-        display: block; /* Muestra en la clase activa */
-    }
-}
-
-/* ... (estilos posteriores) ... */
 
 /* Estilos para la página de categorías de herramientas */
 .tools-categories {
