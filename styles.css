@@ -147,6 +147,12 @@
     opacity: 1;
     transform: translateY(0);
   }
+  .dropdown.active .dropdown-content {
+    display: block; /* Asegúrate de que se muestre */
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
   /* Main Content Styles */
   main {
