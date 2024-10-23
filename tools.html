@@ -8,7 +8,52 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
     <script src="script.js" defer></script>
 </head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+
+
+
+    }
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .category {
+        background-color: #e0e0e0;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        width: 200px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .category i {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .footer {
+        background-color: #000;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    .footer .footer-section {
+        display: inline-block;
+        margin: 0 20px;
+    }
+</style>
 <body>
+    <a href="#main-content" class="skip-to-content">Saltar al contenido principal</a>
+
     <header>
         <nav>
             <a href="index.html" class="logo">WebFlex</a>
@@ -39,57 +84,77 @@
         </nav>
     </header>
 
-    <main>
-        <section class="tools-hero">
-            <h1>Nuestras Herramientas</h1>
-            <p>Explora nuestra colección de herramientas multimedia para potenciar tu creatividad</p>
+    <main id="main-content">
+        <section class="tools-hero animate-on-scroll">
+            <h1>Herramientas WebFlex</h1>
+            <p>Descubre nuestra colección de herramientas para potenciar tu productividad y creatividad</p>
         </section>
-
-        <section class="tools-categories">
-            <h2>Categorías de Herramientas</h2>
-            <div class="category-grid">
+      <center><h2>Categorías de Herramientas</h2></center>
+        <div class="categories">
+            <div class="category">
                 <a href="tools-text.html" class="category-card">
                     <i class="fas fa-font"></i>
                     <h3>Texto</h3>
                 </a>
+            </div>
+            <div class="category">
                 <a href="tools-image.html" class="category-card">
                     <i class="fas fa-image"></i>
                     <h3>Imagen</h3>
                 </a>
+            </div>
+            <div class="category">
                 <a href="tools-audio.html" class="category-card">
                     <i class="fas fa-volume-up"></i>
                     <h3>Audio</h3>
                 </a>
-                <a href="tools-video.html" class="category-card">
+            </div>
+            <div class="category">
+               <a href="tools-video.html" class="category-card">
                     <i class="fas fa-video"></i>
                     <h3>Video</h3>
                 </a>
+            </div>
+            <div class="category">
                 <a href="tools-document.html" class="category-card">
                     <i class="fas fa-file-alt"></i>
                     <h3>Documento</h3>
                 </a>
+            </div>
+            <div class="category">
                 <a href="tools-diagram.html" class="category-card">
                     <i class="fas fa-project-diagram"></i>
                     <h3>Diagramas</h3>
                 </a>
+            </div>
+            <div class="category">
+
                 <a href="tools-image-bank.html" class="category-card">
                     <i class="fas fa-images"></i>
                     <h3>Bancos de Imágenes</h3>
                 </a>
+            </div>
+            <div class="category">
                 <a href="tools-english.html" class="category-card">
                     <i class="fas fa-language"></i>
                     <h3>Aprendizaje de Inglés</h3>
                 </a>
+            </div>
+            <div class="category">
+
                 <a href="tools-ai.html" class="category-card">
                     <i class="fas fa-robot"></i>
                     <h3>IA</h3>
                 </a>
+            </div>
+            <div class="category">
                 <a href="tools-security.html" class="category-card">
                     <i class="fas fa-shield-alt"></i>
                     <h3>Seguridad</h3>
                 </a>
             </div>
-        </section>
+        </div>
+    </div>
     </main>
 
     <footer>
@@ -109,9 +174,9 @@
             <div class="footer-section">
                 <h3>Síguenos</h3>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
