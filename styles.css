@@ -65,12 +65,12 @@
 
   .nav-links {
     display: flex;
-    list-style: none;
   }
 
   .nav-links li {
     margin-left: 2rem;
     position: relative;
+    list-style: none;
   }
 
   .nav-links a {
