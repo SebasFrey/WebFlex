@@ -120,7 +120,7 @@ nav {
   left: 0;
   background-color: var(--primary-color);
   min-width: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
   z-index: 1;
   opacity: 0;
   transform: translateY(-10px);
@@ -147,8 +147,10 @@ nav {
   opacity: 1;
   transform: translateY(0);
 }
+
 .dropdown.active .dropdown-content {
-  display: block; /* Asegúrate de que se muestre */
+  display: block;
+  /* Asegúrate de que se muestre */
   opacity: 1;
   transform: translateY(0);
 }
@@ -492,6 +494,7 @@ footer {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -506,6 +509,7 @@ footer {
   from {
     transform: translateX(-100%);
   }
+
   to {
     transform: translateX(0);
   }
@@ -687,6 +691,7 @@ select:focus {
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--secondary-color);
 }
+
 .reviews-hero {
   background-color: #000;
   color: #fff;
@@ -754,8 +759,8 @@ select:focus {
 }
 
 .star-rating label:hover,
-.star-rating label:hover ~ label,
-.star-rating input:checked ~ label {
+.star-rating label:hover~label,
+.star-rating input:checked~label {
   color: #ffc107;
 }
 
