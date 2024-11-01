@@ -310,7 +310,7 @@ main {
 }
 
 .tool-link:hover {
-  background-color: var(--accent-color);
+  background-color: #fff;
   transform: translateY(-2px);
 }
 
