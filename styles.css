@@ -1,13 +1,9 @@
 :root {
-  --primary-color: #ffffff;
-  /* Fondo blanco */
-  --secondary-color: #000000;
-  /* Negro */
+  --primary-color: #ffffff;  /* Fondo blanco */
+  --secondary-color: #000000;  /* Negro */
   --accent-color: #000000;
-  --text-color: #000000;
-  /* Texto negro */
-  --background-color: #ffffff;
-  /* Fondo blanco */
+  --text-color: #000000;  /* Texto negro */
+  --background-color: #ffffff;  /* Fondo blanco */
   --header-height: 60px;
   --transition-speed: 0.3s;
 }
@@ -64,7 +60,6 @@ nav {
 
 .logo:hover {
   transform: scale(1.05);
-
 }
 
 .nav-links {
@@ -85,7 +80,7 @@ nav {
 }
 
 .nav-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -97,7 +92,6 @@ nav {
 
 .nav-links a:hover::after {
   width: 100%;
-
 }
 
 .burger {
@@ -124,7 +118,8 @@ nav {
   z-index: 1;
   opacity: 0;
   transform: translateY(-10px);
-  transition: opacity var(--transition-speed) ease, transform var(--transition-speed) ease;
+  transition: opacity var(--transition-speed) ease,
+    transform var(--transition-speed) ease;
 }
 
 .dropdown-content li {
@@ -165,8 +160,7 @@ main {
   padding: 4rem 2rem;
   border-radius: 10px;
   margin-bottom: 4rem;
-  box-shadow: 0px 10px 25px black
-
+  box-shadow: 0px 10px 25px black;
 }
 
 .hero h1 {
@@ -197,7 +191,8 @@ main {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
   text-align: center;
-  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+  transition: transform var(--transition-speed) ease,
+    box-shadow var(--transition-speed) ease;
 }
 
 .feature:hover {
@@ -229,7 +224,7 @@ main {
   padding: 4rem 2rem;
   border-radius: 10px;
   margin-bottom: 4rem;
-  box-shadow: 0px 10px 25px black
+  box-shadow: 0px 10px 25px black;
 }
 
 .tools-hero h1 {
@@ -237,8 +232,6 @@ main {
   margin-bottom: 1rem;
   letter-spacing: 1px;
   border-radius: 10px;
-  
-
 }
 
 .tools-hero p {
@@ -246,7 +239,6 @@ main {
   max-width: 600px;
   margin: 0 auto;
   opacity: 0.9;
-  
 }
 
 .tools-grid {
@@ -254,8 +246,6 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-bottom: 4rem;
-
-
 }
 
 .tool-item {
@@ -264,7 +254,8 @@ main {
   box-shadow: 0px 10px 25px black;
   padding: 2rem;
   text-align: center;
-  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+  transition: transform var(--transition-speed) ease,
+    box-shadow var(--transition-speed) ease;
 }
 
 .tool-item:hover {
@@ -306,7 +297,8 @@ main {
   color: var(--primary-color);
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  transition: background-color var(--transition-speed) ease, transform var(--transition-speed) ease;
+  transition: background-color var(--transition-speed) ease,
+    transform var(--transition-speed) ease;
 }
 
 .tool-link:hover {
@@ -371,7 +363,8 @@ footer {
   color: var(--secondary-color);
   font-size: 1.5rem;
   opacity: 0.8;
-  transition: opacity var(--transition-speed) ease, transform var(--transition-speed) ease;
+  transition: opacity var(--transition-speed) ease,
+    transform var(--transition-speed) ease;
 }
 
 .social-icons a:hover {
@@ -394,7 +387,10 @@ footer {
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
-  transition: opacity var(--transition-speed) ease, visibility var(--transition-speed) ease, background-color var(--transition-speed) ease, transform var(--transition-speed) ease;
+  transition: opacity var(--transition-speed) ease,
+    visibility var(--transition-speed) ease,
+    background-color var(--transition-speed) ease,
+    transform var(--transition-speed) ease;
 }
 
 #scroll-to-top:hover {
@@ -452,12 +448,10 @@ footer {
     box-shadow: none;
     opacity: 1;
     transform: none;
-
   }
 
   .dropdown-content a {
     padding: 10px 0;
-
   }
 
   .dropdown:hover .dropdown-content {
@@ -466,7 +460,6 @@ footer {
 
   .dropdown.active .dropdown-content {
     display: block;
-
   }
 }
 
@@ -516,7 +509,8 @@ footer {
   border-radius: 5px;
   font-weight: bold;
   text-align: center;
-  transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease, transform var(--transition-speed) ease;
+  transition: background-color var(--transition-speed) ease,
+    color var(--transition-speed) ease, transform var(--transition-speed) ease;
 }
 
 .btn-primary {
@@ -563,7 +557,8 @@ footer {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
   padding: 2rem;
-  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+  transition: transform var(--transition-speed) ease,
+    box-shadow var(--transition-speed) ease;
 }
 
 .card:hover {
@@ -700,30 +695,26 @@ select:focus {
   border-radius: 10px;
   padding: 2rem;
   text-align: center;
-  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
-  box-shadow: 0px 10px 25px black
-
+  transition: transform var(--transition-speed) ease,
+    box-shadow var(--transition-speed) ease;
+  box-shadow: 0px 10px 25px black;
 }
 
 .category-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(255, 255, 255, 0.15);
-  
 }
 
 .category-card i {
   font-size: 3rem;
   margin-bottom: 1rem;
   color: var(--secondary-color);
-  box-shadow: 0px 10px 25px black
-
+  box-shadow: 0px 10px 25px black;
 }
 
 .category-card h3 {
   color: var(--secondary-color);
   font-size: 1rem;
-
-  
 }
 
 .star-rating {
@@ -769,11 +760,11 @@ select:focus {
 }
 
 .comparison-table th.sort-asc::after {
-  content: ' ▲';
+  content: " ▲";
 }
 
 .comparison-table th.sort-desc::after {
-  content: ' ▼';
+  content: " ▼";
 }
 
 .comparison-table tr:nth-child(even) {
@@ -794,7 +785,8 @@ select:focus {
   z-index: 1000;
   opacity: 0;
   visibility: hidden;
-  transition: opacity var(--transition-speed) ease, visibility var(--transition-speed) ease;
+  transition: opacity var(--transition-speed) ease,
+    visibility var(--transition-speed) ease;
 }
 
 [data-tooltip]:hover .tooltip {
