@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebFlex - Reseñas</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-to-content">Saltar al contenido principal</a>
+
+  <header>
+    <nav>
+      <a href="index.html" class="logo">WebFlex</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="dropdown">
+          <a href="tools.html">Herramientas</a>
+          <ul class="dropdown-content">
+            <li><a href="tools-text.html">Texto</a></li>
+            <li><a href="tools-image.html">Imagen</a></li>
+            <li><a href="tools-audio.html">Audio</a></li>
+            <li><a href="tools-video.html">Video</a></li>
+            <li><a href="tools-document.html">Documento</a></li>
+            <li><a href="tools-diagram.html">Diagramas</a></li>
+            <li><a href="tools-image-bank.html">Bancos de Imágenes</a></li>
+            <li><a href="tools-english.html">Aprendizaje de Inglés</a></li>
+            <li><a href="tools-ai.html">IA</a></li>
+            <li><a href="tools-security.html">Seguridad</a></li>
+          </ul>
+        </li>
+        <li><a href="reviews.html">Reseñas</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Reseñas de WebFlex</h1>
+        <p>
+          Comparte tu experiencia y ayuda a otros usuarios a descubrir
+          nuestras herramientas
+        </p>
+        <a href="tools.html" class="cta-button">Explorar Herramientas</a>
+      </div>
+    </section>
+
+    <section class="reviews-form animate-on-scroll">
+      <div class="card">
+        <h2>Deja tu reseña</h2>
+        <form id="review-form" class="form">
+          <div class="form-group">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" id="name" name="name" class="form-input" required />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-input" required />
+          </div>
+          <div class="form-group">
+            <label for="rating" class="form-label">Valoración</label>
+            <div class="star-rating">
+              <input type="radio" id="star5" name="rating" value="5" required />
+              <label for="star5" title="5 estrellas">★</label>
+              <input type="radio" id="star4" name="rating" value="4" />
+              <label for="star4" title="4 estrellas">★</label>
+              <input type="radio" id="star3" name="rating" value="3" />
+              <label for="star3" title="3 estrellas">★</label>
+              <input type="radio" id="star2" name="rating" value="2" />
+              <label for="star2" title="2 estrellas">★</label>
+              <input type="radio" id="star1" name="rating" value="1" />
+              <label for="star1" title="1 estrella">★</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="comment" class="form-label">Comentario</label>
+            <textarea id="comment" name="comment" class="form-textarea" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar Reseña</button>
+        </form>
+        <div id="success-message" class="success-message" style="display: none">
+          Su reseña ha sido enviada correctamente
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Sobre WebFlex</h3>
+        <p>
+          WebFlex es tu centro de herramientas multimedia, diseñado para
+          potenciar tu creatividad y productividad en la era digital.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tools.html">Herramientas</a></li>
+          <li><a href="reviews.html">Reseñas</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scroll-to-top" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</body>
+
+</html>
